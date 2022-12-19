@@ -1,0 +1,512 @@
+/* ------------------------------------------------- START \\ header,footer -------------------------------------------------*/
+header,footer {
+	opacity:0.8;
+	left: 0;
+    right: 0;
+}
+
+
+header {
+    border-radius: 10px 10px 0 0 ;
+	background-color: black;
+	color:white;
+    width: 100%;
+    top: 0;
+    position: relative;
+}
+
+.header_container {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-between;
+	justify-content: space-around;
+    
+}
+
+
+
+footer  {
+    border-radius: 0 0 10px 10px;
+	background-color:black; 
+	color:white;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer_container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-between;
+	justify-content: space-around;
+}
+
+.material-icons.md-30 {
+    font-size: 30px;
+}
+
+.social-icon {
+	color:white;
+	transition: 0.2s;
+	text-decoration: none;
+	font-size: 30px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.social-icon:hover {
+	color:red;
+}
+
+html { 
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* ------------------------------------------------- END \\ header,footer -------------------------------------------------*/
+
+/* ------------------------------------------------- START \\ Game -------------------------------------------------*/
+
+[hidden] {
+    display: none !important;
+}
+
+button {
+	background: #2a3551;
+	color: rgb(229, 229, 229);
+	border-radius: 3px;
+}
+
+button:hover {
+	background-color:  rgb(151, 173, 219);;
+	color: #000000;
+	text-decoration: none;
+}
+
+input {
+    background: #2a3551; 
+}
+
+
+table {
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+td {
+    
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+
+#normal_tile {
+    background-color: white;
+}
+
+#lamp_tile {
+    background-color: lightyellow;
+}
+
+#black_tile {
+    background-color: black;
+}
+
+
+.game {
+    width: 50%;
+	min-width:440px;
+	max-width:1000px;
+	padding:10px;
+	margin: 0 auto;
+    color: rgb(229, 229, 229);
+}
+
+
+
+/* ------------------------------------------------- Welcome Screen-------------------------------------------------*/
+#welcome_screen {
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.nameInput,.mapChoice,.latestResults {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+#welcome_screen p,legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.nameInput {
+    margin-bottom: 20px;
+    
+}
+input {
+    color: rgb(229, 229, 229);
+    text-align: center;
+}
+
+
+.mapChoice {
+    margin-bottom: 15px;
+}
+
+
+.theFieldSet_SET {
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.theFieldSet_CUS {
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: transparent;
+    border-right:transparent;
+}
+
+
+.latestResults {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    color: rgb(200, 200, 200);
+}
+
+
+
+.latestResults p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+.latestResults li {
+    margin-right: 10px;
+    margin-left:5px;
+}
+
+
+
+.goToGame {
+
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.goToGame button {
+    width: 30%;
+    height: 30px;
+}
+
+
+
+
+
+/* ------------------------------------------------- SavedGames Screen -------------------------------------------------*/
+
+
+#savedGames_screen {
+
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+
+#savedGames_screen p {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+#savedGames_screen li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+}
+
+
+#savedGames_screen button {
+    margin-top: 15px;
+    width: 40%;
+    height: 35px;
+}
+
+#savedGames_screen caption {
+    color: rgb(229, 229, 229);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#savedGames_screen table {
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+#savedGames_btns_div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
+
+#savedGames_btns_div button {
+    width: 40%;
+    height: 35px;
+}
+/* ------------------------------------------------- CustomMapCreation Screen -------------------------------------------------*/
+
+#game_board_custom {
+    background-color: rgba(68, 93, 143, 0.56);
+    display: flex;
+    flex-direction: column;
+}
+
+#TextInfoForCustom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(19, 47, 72);
+}
+
+#tableCustomDiv {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#customGameBoardbtns {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#customGameBoardbtns button {
+    width: 40%;
+    height: 30px;
+}
+/* ------------------------------------------------- CustomMaps screen -------------------------------------------------*/
+
+#customGames_screen {
+
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+
+#customGames_screen p {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+#customGames_screen li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+}
+
+
+#customGames_screen button {
+    margin-top: 15px;
+    width: 50%;
+    height: 35px;
+}
+
+#customGames_screen caption {
+    color: rgb(229, 229, 229);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#customGames_screen table {
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#leaveCustomGames_Div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* ------------------------------------------------- GameScreen -------------------------------------------------*/
+
+#game_screen {
+
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#game_screen p {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#game_screen #ShowAbles {
+    
+    text-align: center;
+    font-weight: bolder;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgb(19, 47, 72);
+    border-bottom: 2px solid black;
+}
+
+#game_timer {
+    margin-top: 10px;
+}
+
+#game_mode {
+    margin-bottom: 10px;
+}
+
+#editable {
+	margin: 0 auto;
+    margin-top: 10px;
+}
+
+#player_name,#game_mode {
+    margin-top: 10px;
+}
+
+
+#game_screen_btns {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 3%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#game_screen_btns button {
+    width: 30%;
+    height: 35px;
+}
+
+
+/* ------------------------------------------------- Winning Screen -------------------------------------------------*/
+
+#winner_screen {
+    background-color: rgba(68, 93, 143, 0.56);
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#youWonMarker, #winningDetails {
+    text-align: center;
+    color: rgb(229, 229, 229);
+}
+
+#youWonMarker {
+    background-color: rgb(19, 47, 72);
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    border-bottom: 2px solid black;;
+}
+
+#winningDetails {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+#winningBtns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 2%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#winner_screen button {
+    width: 30%;
+    height: 25px;
+}
+
+
+
+
+/* ------------------------------------------------- END \\ Game -------------------------------------------------*/

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="header_container">
+            <h1>Light bulb placement</h1>
+        </div>
+    </header>
+
+
+    <div class="game">
+
+        
+        <div id="welcome_screen"> 
+        
+            <div class="nameInput">
+                <p>Player name: </p>
+                <input type="text" id="name_field" value="">
+            </div>
+            
+
+            <div class="mapChoice">
+                <fieldset id='theFieldSet' class ='theFieldSet_SET'>
+                    <legend>Select a map:</legend>
+                
+                    <div>
+                      <input type="radio" id="easy" name="map" value="easy"checked>
+                      <label for="easy">Easy</label>
+                    </div>
+                
+                    <div>
+                      <input type="radio" id="medium" name="map" value="medium">
+                      <label for="medium">Medium</label>
+                    </div>
+                
+                    <div>
+                      <input type="radio" id="hard" name="map" value="hard">
+                      <label for="hard">Hard</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="custom" name="map" value="custom">
+                        <label for="custom">Custom</label>
+
+                        <div id="HxW" hidden>
+                            <input type="number" min="1" value="7" id="H">
+                            <label for="H">Height</label>
+                            <input type="number" min="1" value="7" id="W">
+                            <label for="W">Width</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            
+            <div class="latestResults">
+                <p>Latest Results:</p>
+                <ul id="latestResultsList">
+                    
+                </ul>
+            </div>
+
+
+            <div class="goToGame">
+                <button id="showSavedGames_btn">SavedMaps</button>
+                <button id="showCustomGames_btn">CustomMaps</button>
+                <button id="proceed_btn">Proceed</button>
+            </div>
+
+        </div>
+
+
+        <!-- welcome_screen extension -->
+        <div id="savedGames_screen" hidden>
+            <p>Saved Games</p>
+            <ul id="savedGamesList">
+                
+            </ul>
+            <div id = 'savedGames_btns_div'>
+                <button id="leaveSavedGames">Back</button>
+                <button id="load_btn">Load</button>
+            </div>
+        </div>
+        
+
+        <div id="customGames_screen" hidden>
+            <p>Custom Games</p>
+            <ul id="customGamesList">
+                
+            </ul>
+            
+            <div id="leaveCustomGames_Div">
+                <button id="leaveCustomGames">MainMenu</button>
+            </div>
+            
+        </div>
+        
+
+        <div id="game_screen" hidden>
+            
+            
+            <div id="ShowAbles">
+                <div id="game_timer">Elapsed time: 00:00:00</div>
+                <div id="player_name"></div>
+                <div id="game_mode"></div>
+            </div>
+           
+
+            
+            <div id="game_board">
+                <table id="editable"></table>
+            </div>
+
+
+            <div id="game_screen_btns">
+                <button id="restart_game">Restart</button>
+                <button id="main_menu">MainMenu</button>
+                <button id="save_game">Save</button>
+            </div>
+            
+
+        </div>
+
+
+        <div id="game_board_custom" hidden>
+
+            <div id="TextInfoForCustom">
+                <h3>Modify accordingly:</h3>
+            </div>
+
+
+            <div id="tableCustomDiv">
+                <table id="custom_table"></table>
+            </div>
+            
+
+            <div id="customGameBoardbtns">
+                <button id="start_custom"> CreateMap! </button>
+                <button id="main_menu">MainMenu</button>     
+            </div>
+
+        </div>
+
+
+        <div id="winner_screen" hidden>
+
+
+            <div id="youWonMarker">
+                <h2>You Won!</h2>
+            </div>
+        
+
+            <div id ="winningDetails"></div>
+            
+            <div id="winningBtns">
+                <button id="restart_game">Restart</button>
+                <button id="main_menu">MainMenu</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_container">
+            <a class="social-icon" href="mailto:yousefgalal.alakhali@gmail.com" target="_blank">
+                <span class="material-icons md-30">mail</span> 
+            </a>
+            <a class="social-icon" href="https://twitter.com/home" target="_blank">
+                <span class="fab fa-twitter"></span>
+            </a>
+            <a class="social-icon" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <span class="fab fa-youtube"><span>
+            </a>
+            <a class="social-icon" href="https://github.com/Yousef-1022" target="_blank">
+                <span class="fab fa-github"><span>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
